@@ -1,7 +1,17 @@
 [versions]
 agp = "8.13.1"
 kotlin = "2.2.21"
+dexkit = "2.0.7"
+kavaref-core = "1.0.2"
+hikage-core = "1.0.2"
+fastkv = "3.0.1"
+
 [libraries]
+hikage-core = { module = "com.highcapable.hikage:hikage-core", version.ref = "hikage-core" }
+dexkit = { module = "org.luckypray:dexkit", version.ref = "dexkit" }
+kavaref-core = { module = "com.highcapable.kavaref:kavaref-core", version.ref = "kavaref-core" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+fastkv = { module = "io.github.billywei01:fastkv", version.ref = "fastkv" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
